@@ -1,6 +1,12 @@
 """
-Модуль в процессе написания.
+Модуль рисует выбранные пользователем фигуры по введенным параметрам.
+
+Команды:
+> ель - нарисовать ель
+> ромб - нарисовать ромб
+> выход - завершить программу
 """
+
 
 def main():
     while True:
@@ -12,26 +18,93 @@ def main():
         elif command == '> выход':
             quit()
         else:
-            print('Неправильная команда!')
+            print('Допустимые имена команд: ель, ромб, выход')
 
 
 def input_command(message):
-    command = input(message).strip().lower()
-    while '  ' in command:
-        command = command.replace('  ', ' ')
-    return command
+    while True:
+        command = input(message).strip().lower()
+        while '  ' in command:
+            command = command.replace('  ', ' ')
+
+        if not command.startswith('> '):
+            print('Команда должна начинаться с ">"')
+            continue
+        if not command.strip('> ').isalpha():
+            print('Имя команды должно состоять только из букв')
+            continue
+
+        return command
 
 
 def print_fir():
-    height = input('Введите высоту без учёта ствола (целое положительное число): ')
-    fir_trunk = input('Нужен ли ствол ("да" или "нет")').lower()
-    fir_symbol = input('Введите символ, которым должна быть отрисована ель: ')
-    place_holder = input('Введите символ-заполнитель:')
+    fir_height = input_height()
+    fir_trunk = confirm('Нужен ли ствол: ')
+    fir_symbol = input_symbol('Символ, которым нужно отрисовать ель: ')
+    place_holder = input_symbol('Символ, которым нужно заполнить пустые места: ')
+
+    picture_width = fir_height*2 + 1
+    trunk_height = int(1 + fir_height * 0.2)
+
+    for i in range(fir_height):
+        print((fir_symbol*(1 + 2*i)).center(picture_width, place_holder))
+    if fir_trunk:
+        for _ in range(trunk_height):
+            print(fir_symbol.center(picture_width, place_holder))
 
 
 def print_romb():
-    pass
+    romb_height = input_height()
+    romb_symbol = input_symbol('Символ, которым нужно отрисовать ромб: ')
+    place_holder = input_symbol('Символ, которым нужно заполнить пустые места: ')
 
+    if romb_height % 2 == 1:
+        picture_width = romb_height + 2
+    else:
+        picture_width = romb_height + 1
+    romb_center = romb_height/2
+
+    for i in range(romb_height):
+        if i < romb_center:
+            print((romb_symbol * (1 + 2*i)).center(picture_width, place_holder))
+        else:
+            print((romb_symbol * (romb_height*2 - 2*i - 1)).center(picture_width, place_holder))
+
+
+def input_height():
+    while True:
+        height = input('Введите высоту: ')
+
+        if height.startswith('-'):
+            print('Параметр должен быть положительным числом')
+            continue
+        if not height.isnumeric():
+            print('Параметр должен быть целым числом')
+            continue
+
+        return int(height)
+
+
+def confirm(message):
+    while True:
+        answer = input(message).lower().strip()
+
+        if answer == 'да':
+            return True
+        elif answer == 'нет':
+            return False
+        else:
+            print('Параметр должен иметь значение "да" или "нет" (в любом регистре)')
+
+
+def input_symbol(message):
+    while True:
+        symbol = input(message)
+
+        if len(symbol) == 1:
+            return symbol
+
+        print('Параметр должен состоять ровно из 1 символа')
 
 
 main()

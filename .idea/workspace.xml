@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b45a156b-e581-4da5-a767-059ad9d90a2c" name="Changes" comment="" />
+    <list default="true" id="b45a156b-e581-4da5-a767-059ad9d90a2c" name="Changes" comment="">
+      <change beforePath="$USER_HOME$/PythonProjects/YtYt_excercises/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/PythonProjects/YtYt_excercises/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/PythonProjects/YtYt_excercises/2.04_Calc_calories.py" beforeDir="false" afterPath="$USER_HOME$/PythonProjects/YtYt_excercises/2.04_Calc_calories.py" afterDir="false" />
+      <change beforePath="$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py" beforeDir="false" afterPath="$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -22,14 +29,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/villeman/PythonProjects/YtYt_excercises",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/villeman/PythonProjects/YtYt_excercises&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$USER_HOME$/PythonProjects/YtYt_excercises" />
@@ -38,8 +45,8 @@
       <recent name="$USER_HOME$/PythonProjects/YtYt_excercises" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2.04_Calc_calories">
-    <configuration name="2.03_Clear_code_with_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.2.06_print_figures">
+    <configuration name="2.03_сlear_code_with_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YtYt_excercises" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,7 +58,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.03_Clear_code_with_functions.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.03_сlear_code_with_functions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -60,7 +67,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2.04_Calc_calories" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2.04_calc_calories" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YtYt_excercises" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,7 +79,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.04_Calc_calories.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.04_calc_calories.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2.06_print_figures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YtYt_excercises" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,10 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.2.04_Calc_calories" />
+        <item itemvalue="Python.2.06_print_figures" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.2.04_calc_calories" />
         <item itemvalue="Python.Calc_calories2" />
-        <item itemvalue="Python.2.03_Clear_code_with_functions" />
+        <item itemvalue="Python.2.03_сlear_code_with_functions" />
       </list>
     </recent_temporary>
   </component>
@@ -142,5 +171,27 @@
       <updated>1661769433333</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
