@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b45a156b-e581-4da5-a767-059ad9d90a2c" name="Changes" comment="">
-      <change beforePath="$USER_HOME$/PythonProjects/YtYt_excercises/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/PythonProjects/YtYt_excercises/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/PythonProjects/YtYt_excercises/2.04_Calc_calories.py" beforeDir="false" afterPath="$USER_HOME$/PythonProjects/YtYt_excercises/2.04_Calc_calories.py" afterDir="false" />
-      <change beforePath="$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py" beforeDir="false" afterPath="$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py" afterDir="false" />
+    <list default="true" id="b45a156b-e581-4da5-a767-059ad9d90a2c" name="Changes" comment="Add 2.06_print_figures.py module">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.06_roll_dice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.03_Clear_code_with_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/2.03_сlear_code_with_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.04_Calc_calories.py" beforeDir="false" afterPath="$PROJECT_DIR$/2.04_calc_calories.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.06_print_figures.py" beforeDir="false" afterPath="$PROJECT_DIR$/2.06_print_figures.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,34 +43,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/PythonProjects/YtYt_excercises" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/PythonProjects/YtYt_excercises" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2.06_print_figures">
-    <configuration name="2.03_сlear_code_with_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="YtYt_excercises" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.03_сlear_code_with_functions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.3.06_roll_dice">
     <configuration name="2.04_calc_calories" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YtYt_excercises" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,11 +58,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.04_calc_calories.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.04_calc_calories.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,11 +79,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.06_print_figures.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3.06_roll_dice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YtYt_excercises" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.06_roll_dice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,11 +121,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/Calc_calories2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Calc_calories2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PythonProjects/YtYt_excercises" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PythonProjects/YtYt_excercises/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.2.06_print_figures" />
+        <item itemvalue="Python.3.06_roll_dice" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.2.06_print_figures" />
         <item itemvalue="Python.2.04_calc_calories" />
         <item itemvalue="Python.Calc_calories2" />
-        <item itemvalue="Python.2.03_сlear_code_with_functions" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +174,14 @@
       <option name="presentableId" value="Default" />
       <updated>1661769433333</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add 2.06_print_figures.py module">
+      <created>1664601053422</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664601053422</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,15 +195,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/PythonProjects/YtYt_excercises/2.06_print_figures.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add 2.06_print_figures.py module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add 2.06_print_figures.py module" />
   </component>
 </project>

@@ -10,11 +10,21 @@
 
 def main():
     while True:
-        command = input_command('Введите команду "> ель" "> ромб" или "> выход": ')
+        command = input_command('Введите команду: ')
+
         if command == '> ель':
-            print_fir()
+            fir_height = input_int('Введите высоту: ')
+            fir_trunk = input_confirmation('Нужен ли ствол: ')
+            fir_symbol = input_symbol('Символ, которым нужно отрисовать ель: ')
+            place_holder = input_symbol('Символ, которым нужно заполнить пустые места: ')
+
+            print_fir(fir_height, fir_trunk, fir_symbol, place_holder)
         elif command == '> ромб':
-            print_romb()
+            rhomb_height = input_int('Введите высоту: ')
+            rhomb_symbol = input_symbol('Символ, которым нужно отрисовать ромб: ')
+            place_holder = input_symbol('Символ, которым нужно заполнить пустые места: ')
+
+            print_rhomb(rhomb_height, rhomb_symbol, place_holder)
         elif command == '> выход':
             quit()
         else:
@@ -37,14 +47,9 @@ def input_command(message):
         return command
 
 
-def print_fir():
-    fir_height = input_height()
-    fir_trunk = confirm('Нужен ли ствол: ')
-    fir_symbol = input_symbol('Символ, которым нужно отрисовать ель: ')
-    place_holder = input_symbol('Символ, которым нужно заполнить пустые места: ')
-
+def print_fir(fir_height, fir_trunk, fir_symbol, place_holder):
     picture_width = fir_height*2 + 1
-    trunk_height = int(1 + fir_height * 0.2)
+    trunk_height = int(1 + fir_height*0.2)
 
     for i in range(fir_height):
         print((fir_symbol*(1 + 2*i)).center(picture_width, place_holder))
@@ -53,39 +58,35 @@ def print_fir():
             print(fir_symbol.center(picture_width, place_holder))
 
 
-def print_romb():
-    romb_height = input_height()
-    romb_symbol = input_symbol('Символ, которым нужно отрисовать ромб: ')
-    place_holder = input_symbol('Символ, которым нужно заполнить пустые места: ')
+def print_rhomb(rhomb_height, rhomb_symbol, place_holder):
+    picture_width = rhomb_height + 1
+    if rhomb_height % 2 == 1:
+        picture_width += 1
 
-    if romb_height % 2 == 1:
-        picture_width = romb_height + 2
-    else:
-        picture_width = romb_height + 1
-    romb_center = romb_height/2
+    rhomb_center = rhomb_height / 2
 
-    for i in range(romb_height):
-        if i < romb_center:
-            print((romb_symbol * (1 + 2*i)).center(picture_width, place_holder))
+    for i in range(rhomb_height):
+        if i < rhomb_center:
+            print((rhomb_symbol * (1 + 2*i)).center(picture_width, place_holder))
         else:
-            print((romb_symbol * (romb_height*2 - 2*i - 1)).center(picture_width, place_holder))
+            print((rhomb_symbol * (rhomb_height*2 - 2*i - 1)).center(picture_width, place_holder))
 
 
-def input_height():
+def input_int(message):
     while True:
-        height = input('Введите высоту: ')
+        parameter = input(message)
 
-        if height.startswith('-'):
+        if parameter.startswith('-'):
             print('Параметр должен быть положительным числом')
             continue
-        if not height.isnumeric():
+        if not parameter.isnumeric():
             print('Параметр должен быть целым числом')
             continue
 
-        return int(height)
+        return int(parameter)
 
 
-def confirm(message):
+def input_confirmation(message):
     while True:
         answer = input(message).lower().strip()
 

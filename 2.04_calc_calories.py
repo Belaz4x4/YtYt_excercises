@@ -7,7 +7,7 @@ def calc_calories(weight, height, age, sex, activity_level):
     base_calories = calc_basic_calories(weight, height, age, sex)
     activity_coef = calc_activity_coef(activity_level)
 
-    return int(round(base_calories * activity_coef))
+    return round(base_calories * activity_coef)
 
 
 def calc_basic_calories(weight, height, age, sex_coef):
@@ -18,10 +18,12 @@ def calc_basic_calories(weight, height, age, sex_coef):
     check_limit(weight, weight_limit, 'веса')
     check_limit(height, height_limit, 'роста')
     check_limit(age, age_limit, 'возраста')
-    if not (sex == 'М' or sex == 'Ж'):
+    if sex == 'М':
+        sex_coef = 5
+    elif sex == 'Ж':
+        sex_coef = -161
+    else:
         raise ValueError('Неверное значение пола! Введите букву "М" или "Ж".')
-
-    sex_coef = -161 if sex == 'Ж' else 5
 
     return 10 * weight + 6.25 * height - 5 * age + sex_coef
 
