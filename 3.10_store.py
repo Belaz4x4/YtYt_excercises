@@ -4,56 +4,100 @@
 """
 
 
-def show_stock_balance():
+def inventory_accounting(commands, stock_balance):
+    """
+    Функция ведет складской учет. Принимает словарь, содержащий принимаемые комманды и словарь содержащий
+    складские остатки.
+
+    """
+    print('\tДоступные команды:')
+    for func in commands.values():
+        print(func.__doc__)
+    print("\t'' - выход")
+
+    while True:
+        command = input()
+        command_values = command.split(sep='#')
+        command_name = command_values[0]
+        if command_name == '':
+            quit()
+        elif command_name not in commands:
+            print('Ошибка: введена неверная команда.')
+            print('Доступные команды:', *commands)
+        elif len(command_values) == 1:
+            commands[command_name](stock_balance)
+        else:
+            try:
+                commands[command_name](stock_balance, *command_values[1:])
+            except (ValueError, TypeError):
+                print('Ошибка: введены неверные данные для команды.')
+        print()
+
+
+def show_stock_balance(stock_balance):
+    """
+    info - показать остатки на складе.
+    """
     print('Остаток на складе:')
-    for good, amount in main_stock_balance.items():
+    for good, amount in stock_balance.items():
         print(f'{good}: {amount}')
 
 
-def add_goods(good, amount):
+def add_goods(stock_balance, good, amount):
+    """
+    add#наименование товара#количество товара цифрами - добавить товар на склад
+    """
     amount = int(amount)
-    if good in main_stock_balance:
-        main_stock_balance[good] += amount
+    if good in stock_balance:
+        stock_balance[good] += amount
     else:
-        main_stock_balance[good] = amount
+        stock_balance[good] = amount
     print(f'Добавлено: {amount} {good}')
 
 
-def pick_goods(good, amount):
+def pick_goods(stock_balance, good, amount):
+    """
+    pick#наименование товара#количество товара цифрами - получить товар со склада
+    """
     amount = int(amount)
-    if good not in main_stock_balance:
+    if good not in stock_balance:
         print(f'Ошибка: Товар {good} не найден')
-    elif main_stock_balance[good] >= amount:
-        main_stock_balance[good] -= amount
+    elif stock_balance[good] >= amount:
+        stock_balance[good] -= amount
         print(f'Получено со склада: {amount} {good}')
     else:
         print('Ошибка: Недостаточно товара на складе')
 
 
-def inventory_accounting():
+def inventory_accounting(commands, stock_balance):
     """
-    Функция ведет складской учет.
-    Доступные команды:
-    info - показать остатки на складе.
-    add#наименование товара#количество товара цифрами - добавить товар на склад
-    pick#наименование товара#количество товара цифрами - получить товар со склада
-    '' - выход
+    Функция ведет складской учет. Принимает словарь, содержащий принимаемые комманды и словарь содержащий
+    складские остатки.
+
     """
+    print('\tДоступные команды:')
+    for func in commands.values():
+        print(func.__doc__)
+    print("\t'' - выход")
+
     while True:
         command = input()
         command_values = command.split(sep='#')
         command_name = command_values[0]
-        if command_name not in commands:
+        if command_name == '':
+            quit()
+        elif command_name not in commands:
             print('Ошибка: введена неверная команда.')
             print('Доступные команды:', *commands)
         elif len(command_values) == 1:
-            commands[command_name]()
+            commands[command_name](stock_balance)
         else:
             try:
-                commands[command_name](*command_values[1:])
+                commands[command_name](stock_balance, *command_values[1:])
             except (ValueError, TypeError):
                 print('Ошибка: введены неверные данные для команды.')
         print()
+
 
 if __name__ == '__main__':
     main_stock_balance = {
@@ -63,11 +107,9 @@ if __name__ == '__main__':
     }
 
     commands = {
-        '': quit,
         'info': show_stock_balance,
         'add': add_goods,
         'pick': pick_goods
     }
 
-    print(inventory_accounting.__doc__)
-    inventory_accounting()
+    inventory_accounting(commands, main_stock_balance)

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b45a156b-e581-4da5-a767-059ad9d90a2c" name="Changes" comment="Add 3.08_number_to_string.py">
-      <change afterPath="$PROJECT_DIR$/3.10_store.py" afterDir="false" />
+    <list default="true" id="b45a156b-e581-4da5-a767-059ad9d90a2c" name="Changes" comment="Add 3.10_store.py first version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.10_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.10_store.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/PythonProjects/Michails_lessons&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.space&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -48,7 +48,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3.10_store">
+  <component name="RunManager" selected="Python.main">
     <configuration name="2.06_print_figures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YtYt_excercises" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,9 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.3.10_store" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.3.10_store" />
         <item itemvalue="Python.2.06_print_figures" />
         <item itemvalue="Python.3.06_roll_dice" />
       </list>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666201840132</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add 3.10_store.py first version">
+      <created>1666636207023</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666636207023</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +219,23 @@
     <MESSAGE value="Add 2.06_print_figures.py module" />
     <MESSAGE value="Add 3.06_roll_dice.py module" />
     <MESSAGE value="Add 3.08_number_to_string.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 3.08_number_to_string.py" />
+    <MESSAGE value="Add 3.10_store.py first version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add 3.10_store.py first version" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
